@@ -31,7 +31,7 @@ def main():
 
 
     lines = [ (lambda x: (x[2],x[0]))(line[:-1].split(';')) for line in f ]
-    print(lines)
+
     lines.sort()
     l = groupby(lines, lambda x: x[0])
     d = defaultdict(list)
